@@ -1,5 +1,7 @@
 # Week 1 (Data Collection / Visualization)
 
+[Old document](https://docs.google.com/document/d/1gM6WhZjCuqdqKh2tOCgX_UeXB1ZcCv9Jb-jg_ebHdIs/edit)
+
 ## Duration: 1 week
 
 Engineering: 7/10
