@@ -15,10 +15,12 @@ Gathering and understanding a dataset is a crucial step in the machine learning 
 ## Goal of this section week:
 
 - [Create initial repo + trello board if not done already](https://github.com/CodesmithLLC/dsml-fullstack-getting-started)
-- [Web Scrape data into a csv file](./webscrape.md)
-- [Backup dataset in s3](./backup-in-s3.md)
 - [Sanitize data with pandas](./sanitize-data.md)
 - [Visualize data on jupyter](./visualization.md)
+- [Presentation Guidelines](./presentation.md)
+
+## Extensions
+- [Extension](./extensions)
 
 ## Submission
 
