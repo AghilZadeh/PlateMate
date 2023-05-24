@@ -1,4 +1,4 @@
-# Week 1 (Data Collection / Visualization)
+# Fullstack - Exploratory Data Analysis
 
 ## Duration: ~3 days
 
