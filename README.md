@@ -22,6 +22,5 @@ Gathering and understanding a dataset is a crucial step in the machine learning 
 
 ## Submission
 
-- [Google Form](https://forms.gle/knvHc3dYvihLeNvP7)
 - [Presentation Guidelines](./presentation.md)
 
