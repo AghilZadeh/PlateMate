@@ -8,12 +8,12 @@ Web scraping is the process of automating data collection from the internet, ena
 
 Refer to the  web scraping unit to download and parse the content of your target site.
 
-##Assumptions/Considerations
+## Assumptions/Considerations
 
 Web Scraping is often IO bound, meaning a significant amount of time in executing the script comes from network IO
 When initially requesting a site with Selenium, we must use the XPath to determine what portion of the HTML we want. Look at the difference between full XPath and relative XPath and consider the tradeoffs of using either.
 
-##Variations/Alternatives
+## Variations/Alternatives
 
 There are many different ways we can source data other than Web Scraping:
 

@@ -2,9 +2,9 @@
 
 ## Duration: ~3 days
 
-Engineering: 7/10
+Engineering: 5/10
 
-Analytics: 3/10
+Analytics: 5/10
 
 ## Overview: 
 
