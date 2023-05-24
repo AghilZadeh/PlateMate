@@ -1,6 +1,6 @@
 # Fullstack - Exploratory Data Analysis
 
-## Duration: ~3 days
+## Duration: ~2 days
 
 Engineering: 5/10
 
@@ -17,8 +17,8 @@ Gathering and understanding a dataset is a crucial step in the machine learning 
 - [Visualize data on jupyter](./visualization.md)
 
 ## Extensions
-- [Webscrape to augment data source](./extensions/webscraping.md)
-- [Backup Data to S3](./extensions/backup-data.md)
+- [Webscrape to augment data source](./extensions/webscrape.md)
+- [Backup Data to S3](./extensions/backup-in-s3.md)
 
 ## Submission
 
