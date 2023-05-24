@@ -17,12 +17,12 @@ Labeling - Labels are a key element of effective visualizations. Column names sh
 To render plots in Python we will use Matplotlib, which is the most popular plotting library for the language.  Matplotlib includes methods that generate different types of charts (scatter plot, pie charts, bar chart, etc.) and methods to configure those charts by changing colors, axis names, window size, legend, etc. Check out this basic tutorial on matplotlib.
 
 
-##Assumptions/Considerations
+## Assumptions/Considerations
 
 - Multiple ways to plot something. Consider which representation is the most intuitive.
 - We can measure the quality of a plot in the amount of time it takes a reader to understand. We want readers to look at a plot and immediately understand what they are looking at.
 
-##Variations/Alternatives
+## Variations/Alternatives
 
 There are many different ways we can source data other than Web Scraping:
 
