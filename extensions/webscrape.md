@@ -6,7 +6,7 @@ Web scraping is the process of automating data collection from the internet, ena
 
 ## How we do this:
 
-Refer to the  web scraping unit to download and parse the content of your target site.
+Refer to the  [web scraping guide](https://github.com/CodesmithLLC/aws-cloud-guides/blob/main/WebscrapingWithSelenium.md) to download and parse the content of your target site.
 
 ## Assumptions/Considerations
 
