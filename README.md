@@ -1,8 +1,6 @@
 # Week 1 (Data Collection / Visualization)
 
-[Old document](https://docs.google.com/document/d/1gM6WhZjCuqdqKh2tOCgX_UeXB1ZcCv9Jb-jg_ebHdIs/edit)
-
-## Duration: 1 week
+## Duration: ~3 days
 
 Engineering: 7/10
 
@@ -20,8 +18,9 @@ Gathering and understanding a dataset is a crucial step in the machine learning 
 - [Presentation Guidelines](./presentation.md)
 
 ## Extensions
-- [Extension](./extensions)
+- [Webscrape to augment data source](./extensions/webscraping.md)
+- [Backup Data to S3](./extensions/backup-data.md)
 
 ## Submission
 
-Google Form
+[Google Form](https://forms.gle/knvHc3dYvihLeNvP7)
