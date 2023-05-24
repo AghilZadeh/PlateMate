@@ -15,7 +15,6 @@ Gathering and understanding a dataset is a crucial step in the machine learning 
 - [Create initial repo + trello board if not done already](https://github.com/CodesmithLLC/dsml-fullstack-getting-started)
 - [Sanitize data with pandas](./sanitize-data.md)
 - [Visualize data on jupyter](./visualization.md)
-- [Presentation Guidelines](./presentation.md)
 
 ## Extensions
 - [Webscrape to augment data source](./extensions/webscraping.md)
@@ -23,4 +22,6 @@ Gathering and understanding a dataset is a crucial step in the machine learning 
 
 ## Submission
 
-[Google Form](https://forms.gle/knvHc3dYvihLeNvP7)
+- [Google Form](https://forms.gle/knvHc3dYvihLeNvP7)
+- [Presentation Guidelines](./presentation.md)
+
