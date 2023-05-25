@@ -2,12 +2,18 @@
 
 ## Overview
 
-Web scraping is the process of automating data collection from the internet, enabling the collection of vast amounts of diverse real-world data. Acquiring data through web scraping can help overcome limitations of traditional datasets, enhancing generalizability and ensuring models remain up-to-date with current trends and information.
+Because data is often collected from multiple sources, it is common to encounter inconsistencies, missing values, and other issues that can negatively impact the performance of machine learning models.
+
 Sanitizing data before visualization, such as removing duplicate entries, filling missing values, or correcting data entry errors, leads to more accurate and meaningful representations. This process helps uncover genuine trends and relationships, such as correlations or clusters, facilitating informed decision-making and analysis.
 
 ## How we do this:
 
-See [guide](https://github.com/CodesmithLLC/dsml-modeling-guide/tree/main/preprocessing) for sanitizing and preprocessing data.
+Some basic steps to sanitize data include:
+- Removing duplicate entries
+- Filling missing values
+- Correcting data entry errors
+
+See [guide](https://github.com/CodesmithLLC/dsml-modeling-guide/tree/main/preprocessing) for more info.
 
 ## Assumptions/Considerations
 
