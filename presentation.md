@@ -1,12 +1,16 @@
 # Presentation Guidelines
 
-Time: 3 minutes
+**Time:** 3-5 minutes
 
-Format: Jupyter Notebook
+**Format:** You can use a slide deck or present your work directly in Jupyter Notebook
+- Either format should include at least 3-5 visuals showcasing your data
 
-- Where is the sources of the data?
-- Anything interesting properties (distribution, outliers, etc.)?
-- Which features do you plan on initially using to estimate the a baseline?
-- What is your target variable?
-- Any additional data you could use?
-
+## Information to Include
+- What are you trying to predict?
+- What data did you use?
+- Where is the sources of the data? How much data were you able to work with?
+- What are the baseline input / output? What is your target variable?
+- What are your current results?
+- What challenges did you encounter? / Any missing data?
+- What additional data did you wish you had?
+- What was the most interesting/surprising feature of your dataset
