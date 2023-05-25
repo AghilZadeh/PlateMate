@@ -12,8 +12,7 @@ Scheduling a job to run at a specific time is a common task in data science. Thi
 
 ## Assumptions/Considerations
 
-Web Scraping is often IO bound, meaning a significant amount of time in executing the script comes from network IO
-When initially requesting a site with Selenium, we must use the XPath to determine what portion of the HTML we want. Look at the difference between full XPath and relative XPath and consider the tradeoffs of using either.
+As our dataset evolve the performance of our models may deteriorate due to [data drift](https://www.datacamp.com/tutorial/understanding-data-drift-model-drift). Data drift is a common problem in data science. This is when the data we are using to train our model changes over time. This can lead to our model becoming less accurate over time. We can use a scheduled job to retrain our model on a regular basis to account for data drift.
 
 ## Variations/Alternatives
 
