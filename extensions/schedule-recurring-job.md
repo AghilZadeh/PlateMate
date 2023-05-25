@@ -1,12 +1,12 @@
-# Schedule Job
+# Schedule job to pull latest data
 
 ## Overview
 
-Scheduling a job to run at a specific time is a common task in data science. This can be used to automate data collection, model training, or model deployment. In this guide we will use AWS Lambda to schedule a job to run at a specific time.
+Scheduling a job to run at a specific time is a common task in data science. This can be used to automate data collection, model training, or model deployment. In this guide we will use AWS Lambda to schedule a job to pull the latest data from a source and save it to persistent storage (S3 or RDS).
 
 ## How we do this:
 
-1. Create a Lambda function that will run our job (see [guide](https://github.com/CodesmithLLC/aws-cloud-guides/lambda.md))
+1. Port over your webscraping code to a [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) function that will run our job (see [guide](https://github.com/CodesmithLLC/aws-cloud-guides/lambda.md))
 
 2. Configure Lambda to be triggered by [Cloudwatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html)
 
