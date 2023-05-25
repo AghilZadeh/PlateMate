@@ -26,7 +26,7 @@ To render plots in Python we will use Matplotlib, which is the most popular plot
 
 There are many ways we can visualize data. Here are some of the most common:
 
-- [iPython Widgets](https://ipywidgets.readthedocs.io/en/latest/)
+- [yData-profile](https://github.com/ydataai/ydata-profiling)
 - [Plotly](https://plotly.com/python/)
 - [Seaborn](https://seaborn.pydata.org/)
 - [Altair](https://altair-viz.github.io/getting_started/overview.html)
