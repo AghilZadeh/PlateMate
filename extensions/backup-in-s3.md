@@ -16,5 +16,7 @@ Refer to the [AWS Cloud Guide](https://github.com/CodesmithLLC/aws-cloud-guides)
 
 ## Variations/Alternatives
 
-- Can backup in NFS drive (EFS)
-- Bunch of S3 storage tiers
+- Network Files System (NFS) drive (e.g [AWS EFS](https://aws.amazon.com/efs/))
+- Multiple S3 [storage classes](https://aws.amazon.com/s3/storage-classes/) for cost savings
+- Git / Github - not recommended for large datasets, github limits file size to 50MB
+- Google Drive
