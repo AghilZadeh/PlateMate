@@ -19,5 +19,6 @@ When initially requesting a site with Selenium, we must use the XPath to determi
 
 There are many ways you can schedule a job to run at a specific time:
 
+- [AWS Step Functions](https://aws.amazon.com/step-functions/)
 - [Airflow](https://airflow.apache.org/)
 - [Local Cron Job](https://pypi.org/project/local-crontab/#:~:text=local%2Dcrontab%20is%20a%20Python,because%20of%20Daylight%20Saving%20Time.)

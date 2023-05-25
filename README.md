@@ -19,6 +19,7 @@ Gathering and understanding a dataset is a crucial step in the machine learning 
 ## Extensions
 - [Webscrape to augment data source](./extensions/webscrape.md)
 - [Backup Data to S3](./extensions/backup-in-s3.md)
+- [Schedule Recurring Job](./extensions/schedule-recurring-job.md)
 
 ## Submission
 
