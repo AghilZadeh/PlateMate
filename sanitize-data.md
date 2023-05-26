@@ -8,11 +8,12 @@ Sanitizing data before visualization, such as removing duplicate entries, fillin
 
 ## How we do this:
 
-Some basic steps to sanitize data include:
+Load your data into a pandas dataframe. Some basic steps to sanitize data include:
 
-- Removing duplicate entries
-- Filling missing values
-- Correcting data entry errors
+- Removing duplicate entries (`pd.drop_duplicates`)
+- Filling missing values (`pd.fillna`)
+- Correcting data entry errors (`pd.replace`)
+- Remove null values (`pd.dropna`)
 
 See the [modeling guide](https://github.com/CodesmithLLC/dsml-modeling-guide/tree/main/preprocessing) for more info.
 
