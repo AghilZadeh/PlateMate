@@ -8,7 +8,7 @@ Sanitizing data before visualization, such as removing duplicate entries, fillin
 
 ## How we do this:
 
-Load your data into a pandas dataframe. Some basic steps to sanitize data include:
+Pandas is the primary tool for sanitizing data in Python. Some basic steps to sanitize data include:
 
 - Removing duplicate entries (`pd.drop_duplicates`)
 - Filling missing values (`pd.fillna`)
@@ -26,6 +26,4 @@ See the [modeling guide](https://github.com/CodesmithLLC/dsml-modeling-guide/tre
 
 ## Variations/Alternatives
 
-- Polars Excel
-- Dask
-- Excel
+- [Statsmodels](https://www.statsmodels.org/stable/index.html) for removing outliers and influential observations
