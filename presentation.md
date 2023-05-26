@@ -15,3 +15,6 @@
 - What challenges did you encounter? / Any missing data?
 - What additional data did you wish you had?
 - What was the most interesting/surprising feature of your dataset
+
+## Submission
+- Submit a link to your **cleaned** jupyter notebook to the designated slack channel the mornng of your presentation
