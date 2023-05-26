@@ -12,7 +12,7 @@ Scheduling a job to run at a specific time is a common task in data science. Thi
 
 ## Assumptions/Considerations
 
-As our dataset evolve the performance of our models may deteriorate due to [data drift](https://www.datacamp.com/tutorial/understanding-data-drift-model-drift). Data drift is a common problem in data science. This is when the data we are using to train our model changes over time. This can lead to our model becoming less accurate over time. We can use a scheduled job to retrain our model on a regular basis to account for data drift.
+- As our dataset evolve the performance of our models may deteriorate due to [data drift](https://www.datacamp.com/tutorial/understanding-data-drift-model-drift). Data drift is a common problem in data science. This is when the data we are using to train our model changes over time. This can lead to our model becoming less accurate over time. We can use a scheduled job to retrain our model on a regular basis to account for data drift.
 
 ## Variations/Alternatives
 
