@@ -19,4 +19,4 @@ Refer to the [AWS Cloud Guide](https://github.com/CodesmithLLC/aws-cloud-guides)
 - Git / Github - not recommended for large datasets, github [limits file size to 50MB](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github)
 - Network Files System (NFS) drive (e.g [AWS EFS](https://aws.amazon.com/efs/))
 - Multiple S3 [storage classes](https://aws.amazon.com/s3/storage-classes/) for cost savings
-- Google Drive
+- Google Drive / Dropbox
