@@ -14,6 +14,7 @@
 - What are your current results?
 - What challenges did you encounter? / Any missing data?
 - What additional data did you wish you had?
+- What types of plots did you use to visualize your data and why?
 - What was the most interesting/surprising feature of your dataset
 
 ## Submission
