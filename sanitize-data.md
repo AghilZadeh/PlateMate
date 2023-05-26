@@ -9,14 +9,16 @@ Sanitizing data before visualization, such as removing duplicate entries, fillin
 ## How we do this:
 
 Some basic steps to sanitize data include:
+
 - Removing duplicate entries
 - Filling missing values
 - Correcting data entry errors
 
-See [guide](https://github.com/CodesmithLLC/dsml-modeling-guide/tree/main/preprocessing) for more info.
+See the [modeling guide](https://github.com/CodesmithLLC/dsml-modeling-guide/tree/main/preprocessing) for more info.
 
 ## Assumptions/Considerations
 
+- Keep a copy of the original data before sanitizing
 - Preprocessing steps are model dependent. We want are processed data to meet the assumptions of our model
 - There are multiple ways to perform preprocessing. We want to represent our data in the most optimal way for our model
 - It is important to keep detailed documentation of preprocessing steps. This is important so that other users of our model can preprocess there data similarly in order to make our model usable

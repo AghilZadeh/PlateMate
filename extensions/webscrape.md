@@ -2,7 +2,7 @@
 
 ## Overview
 
-Web scraping is the process of automating data collection from the internet, enabling the collection of vast amounts of diverse real-world data. Acquiring data through web scraping can help overcome limitations of traditional datasets, enhancing generalizability and ensuring models remain up-to-date with current trends and information.
+Web scraping is the process of automating data collection from the internet, enabling the collection of vast amounts of diverse real-world data. Acquiring data through web scraping can help overcome limitations of traditional datasets, enhancing generalizability and ensuring models remain up-to-date with current trends and information. 
 
 ## How we do this:
 
