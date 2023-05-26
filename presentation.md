@@ -3,7 +3,7 @@
 **Time:** 3-5 minutes
 
 **Format:** You can use a slide deck or present your work directly in Jupyter Notebook
-- Either format should include at least 3-5 visuals showcasing your data
+- Either format should include at least 3-5 visuals (can be 10+ if needed) showcasing your data
 - Try to incorporate [iPython Widgets](https://ipywidgets.readthedocs.io/en/latest/) in your notebook to make it more interactive!
 
 ## Information to Include
