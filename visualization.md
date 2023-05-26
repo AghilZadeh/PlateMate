@@ -6,7 +6,15 @@ Visualizing training data before diving into modeling helps identify patterns, t
 
 ## How we do this:
 
-There are many different ways to visualize data and you are free to use whichever method you prefer.
+There are many different ways to visualize data and you are free to use whichever method you prefer to identify patterns in the data. 
+
+Here are some common ways to visualize data:
+
+Histograms - Histograms are a great way to visualize the distribution and detect outliers in a dataset.
+
+Scatterplots - Scatterplots are a great way to visualize the relationship between two variables.
+
+Boxplots - Boxplots are a great way to visualize the distribution of a dataset and detect outliers.
 
 ## Assumptions/Considerations
 
