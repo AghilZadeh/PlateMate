@@ -6,7 +6,7 @@ Scheduling a job to run at a specific time is a common task in data science. Thi
 
 ## How we do this:
 
-1. Port over your webscraping code to a [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) function that will run our job (see [guide](https://github.com/CodesmithLLC/aws-cloud-guides/lambda.md))
+1. Port over your webscraping code to a [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) function that will run our job (see [cloud guide](https://github.com/CodesmithLLC/aws-cloud-guides/blob/main/lambda.md))
 
 2. Configure Lambda to be triggered by [Cloudwatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html)
 
