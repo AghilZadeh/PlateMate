@@ -1,4 +1,5 @@
 import streamlit as st
+import re
 
 def paginator(label, items, items_per_page=10, on_sidebar=True):
     """Lets the user paginate a set of items.
@@ -51,3 +52,8 @@ def paginator(label, items, items_per_page=10, on_sidebar=True):
     max_index = min_index + items_per_page
     import itertools
     return itertools.islice(enumerate(items), min_index, max_index)
+
+
+def find_url(s: str) -> str:
+    'returns a valid url parsed from a string'
+    return re.search(r'(http(s?):)([/|.|\w|\s|-])*\.(?:jpg|jpeg|gif|png)', s).group(0)
