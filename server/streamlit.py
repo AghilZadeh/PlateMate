@@ -1,7 +1,8 @@
 import streamlit as st
-from funcs import paginator, find_url
+from funcs import find_url
 import pandas as pd
 import re
+#from surprise import SVD
 
 st.set_page_config(
     page_title="Home",
@@ -31,7 +32,7 @@ for i in range(n_recipes):
 
 if st.button('submit'):
     df_new = pd.DataFrame({'user':['new']*n_recipes, 'item':recipes['RecipeId'][:n_recipes], 'Rating': selection})
-    print(df_new)
+    #print(df_new)
 
 
 
