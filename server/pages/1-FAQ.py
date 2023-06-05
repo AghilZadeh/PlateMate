@@ -22,7 +22,7 @@ with st.expander("Where does the data come from?"):
 with st.expander("What type of model is being used?"):
     st.write("""
         The recommender model on this website is based on a matrix factorization technique. 
-        It utilizes the scikit-learn surprise library, a powerful tool for building recommendation systems. 
+        It utilizes the scikit-surprise library, a powerful tool for building recommendation systems. 
         By employing matrix factorization, the model can extract meaningful patterns and relationships from the dataset. 
         The recommender model is trained using our dataset, which includes a collection of recipes and reviews. 
         Additionally, the model takes into account the preferences expressed by the user. 

@@ -1,6 +1,6 @@
 import streamlit as st
 import re
-#from surprise import Dataset, Reader, SVD
+from surprise import Dataset, Reader, SVD
 
 def paginator(label, items, items_per_page=10, on_sidebar=True):
     """Lets the user paginate a set of items.

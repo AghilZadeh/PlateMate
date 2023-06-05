@@ -3,6 +3,7 @@ from funcs import find_url
 import pandas as pd
 import re
 #from surprise import SVD
+import sys
 
 st.set_page_config(
     page_title="Home",
@@ -11,6 +12,7 @@ st.set_page_config(
 st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
 st.write("# Welcome to Test Your Taste! 🧑🏽‍🍳")
+print(sys.path)
 
 st.sidebar.success("Select a demo above.")
 
