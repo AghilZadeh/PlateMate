@@ -2,7 +2,6 @@ import streamlit as st
 from funcs import find_url
 import pandas as pd
 import re
-#from surprise import SVD
 import sys
 
 st.set_page_config(
