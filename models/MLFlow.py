@@ -27,7 +27,7 @@ model_params = [{},
                 {'k':40},
                 {'n_cltr_u':20, 'n_cltr_i':20, 'n_epochs':20}
                 ]
-data_params = {'n_data':10000}
+data_params = {'n_data':1000}
 
 # reading data
 reviews_train = pd.read_csv('./data/reviews_train.csv', usecols=['RecipeId', 'AuthorId', 'Rating'])
@@ -47,6 +47,8 @@ for model, name, params in zip(models, model_names, model_params):
         #log model params
         mlflow.log_params(params)
         mlflow.log_params(data_params)
+        mlflow.log_param('model_name', name)
         mlflow.log_metrics({"rmse": results['test_rmse'].mean(), "mae": results['test_mae'].mean()})
         # log model (will save as pickle file)
         mlflow.sklearn.log_model(model, artifact_path = "mod")
+        
