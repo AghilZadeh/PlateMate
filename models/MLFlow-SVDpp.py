@@ -17,10 +17,11 @@ experiment = mlflow.get_experiment_by_name(experiment_name)
 # models
 model = SVDpp
 model_name = 'SVDpp'
-model_params = {'n_factors':[5, 10, 20, 50, 100], 'n_epochs':[5, 10, 20, 50, 100]}
+#model_params = {'n_factors':[5, 10, 20, 50, 100], 'n_epochs':[5, 10, 20, 50, 100]}
+model_params = {'n_factors':[1, 2, 3, 4], 'n_epochs':[20, 50, 100]}
 #model_params = {'n_factors':[5], 'n_epochs':[5]}
 #data_params = {'n_data':[1000, 5000, 10000, 50000, 100000]}
-data_params = {'n_data':[100000]}
+data_params = {'n_data':[10000]}
 
 # reading data
 reviews_train = pd.read_csv('./data/reviews_train.csv', usecols=['RecipeId', 'AuthorId', 'Rating'])
