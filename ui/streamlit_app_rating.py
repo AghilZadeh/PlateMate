@@ -1,5 +1,4 @@
 import streamlit as st
-from funcs import find_url
 import pandas as pd
 import re
 import sys
@@ -21,7 +20,7 @@ st.markdown(
 """
 )
 
-recipes = pd.read_csv('./data/recipes.csv', usecols=['RecipeId', 'Name', 'Images'], nrows=15)
+recipes = pd.read_csv('./data/recipes_selected.csv', usecols=['RecipeId', 'Name', 'Images'], nrows=15)
 recipes['Images'] = list(map(find_url, recipes['Images']))
 n_recipes = 10
 choices = range(1,6)
