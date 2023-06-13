@@ -14,9 +14,10 @@ with st.expander("Where does the data come from?"):
         The recipes dataset encompasses approximately 500,000 recipes across 312 different categories. 
         It provides detailed information about each recipe, including cooking times, servings, ingredients, nutrition facts, instructions, and more.
 
-    The reviews dataset, on the other hand, comprises around 1,400,000 reviews contributed by approximately 270,000 distinct users. 
-    This dataset offers valuable insights into the authorship, ratings, review text, and additional information. 
-    These reviews play a significant role in the development of our recommender system model.
+        The reviews dataset, on the other hand, comprises around 1,400,000 reviews contributed by approximately 270,000 distinct users. 
+        This dataset offers valuable insights into the authorship, ratings, review text, and additional information. 
+        These reviews play a significant role in the development of our recommender system model.
+
     """)
 
 with st.expander("What type of model is being used?"):
@@ -31,5 +32,8 @@ with st.expander("What type of model is being used?"):
 
 with st.expander("Download dataset"):
     st.write("""
-        Here is an S3 link to the dataset:
+        All data is accessible through an AWS S3 link. It contains all reviews (reviews.csv) and all recipes (recipes.csv).
+        Reviews are split into train (%90) and test(%10) sets. The test and train sets contain disjoint users.
+        A portion of recipes that are highly rated and famous are selected (recipes_selected.csv) to be used 
+        in the recommender system. 
     """)
