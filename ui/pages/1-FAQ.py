@@ -32,8 +32,8 @@ with st.expander("What type of model is being used?"):
 
 with st.expander("Download dataset"):
     st.write("""
-        All data is accessible through an AWS S3 link. It contains all reviews (reviews.csv) and all recipes (recipes.csv).
-        Reviews are split into train (%90) and test(%10) sets. The test and train sets contain disjoint users.
-        A portion of recipes that are highly rated and famous are selected (recipes_selected.csv) to be used 
+        All data is accessible through an AWS S3 link. It contains all reviews ((reviews.csv)[https://foodcom.s3.us-east-2.amazonaws.com/reviews.csv]) and all recipes ((recipes.csv)[https://foodcom.s3.us-east-2.amazonaws.com/recipes.csv]).
+        Reviews are split into train ((reviews_train.csv)[https://foodcom.s3.us-east-2.amazonaws.com/reviews_train.csv]) and test ((reviews_test.csv)[https://foodcom.s3.us-east-2.amazonaws.com/reviews_test.csv]) sets by 9 to 1 ratio. The test and train sets contain disjoint users.
+        A portion of recipes that are highly rated and famous are selected ((recipes_selected.csv)[https://foodcom.s3.us-east-2.amazonaws.com/recipes_selected.csv]) to be used 
         in the recommender system. 
     """)
