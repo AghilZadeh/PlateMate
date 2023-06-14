@@ -49,7 +49,7 @@ You can use the app in just a few steps:
 1. clone the repository in your local machine and install requirements
     ```js
     git clone https://github.com/AghilZadeh/dsml-fullstack-food-recommender/
-    pip install requirements.txt
+    pip install -r requirements.txt
     ```
 3. download the neccessary data:
     ```js
