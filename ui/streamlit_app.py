@@ -4,18 +4,8 @@ import random
 import re
 
 
-# Getting recipe data
-cols = ['RecipeId', 'Name', 'Description', 'Image', 'RecipeCategory', 'Keywords',
-       'AggregatedRating', 'ReviewCount', 'RecipeInstructions']
-recipes = pd.read_csv('./data/recipes_selected.csv', usecols=cols)
-
-# index list of recipes shown to or hidden from the user
-recipes_hidden = recipes.index.to_list() 
-recipes_shown = []
-recipes_liked = []
-
 # Function to render a recipe profile
-def render_recipe(ind):
+def render_recipe(ind, recipes):
     st.write("##")
     st.image(recipes.loc[ind, 'Image'], width=400)
     st.write(f"**{recipes.loc[ind, 'Name']}**")
@@ -25,7 +15,7 @@ def render_recipe(ind):
     # else:
     #     st.write(desc)
 
-def render_details(ind):
+def render_details(ind, recipes):
     st.write(f"**Description:** {recipes.loc[ind, 'Description']}")
     st.write(f"**Category:** {recipes.loc[ind, 'RecipeCategory']}")
     st.write(f"**Rating:** {recipes.loc[ind, 'AggregatedRating']}")
@@ -40,6 +30,7 @@ def str2list(s: str) -> list:
 # Main Streamlit app
 def main():
 
+    # page details
     st.set_page_config(
     page_title="Home",
     page_icon="🧑🏽‍🍳"
@@ -51,20 +42,38 @@ def main():
         #### Tell me what you like, I will recommend you recipes to try!
     """)
 
+    # setting session state
+    if 'recipes_notshown' not in st.session_state:
+        # Getting recipe data
+        cols = ['RecipeId', 'Name', 'Description', 'Image', 'RecipeCategory', 'Keywords',
+       'AggregatedRating', 'ReviewCount', 'RecipeInstructions']
+        recipes = pd.read_csv('./data/recipes_selected.csv', usecols=cols)
+
+        # initializing session states
+        st.session_state['recipes_df'] = recipes
+        st.session_state['recipes_notshown'] = recipes.index.to_list()
+        st.session_state['recipes_shown'] = []
+        st.session_state['recipes_liked'] = []
+        st.session_state['recipes_disliked'] = []
+    
+
     # choosing a recipe to show
-    rand_ind = random.choice(recipes_hidden)
-    recipes_shown.append(rand_ind)
-    recipes_hidden.remove(rand_ind)
-    render_recipe(rand_ind)
+    rand_ind = random.choice(st.session_state['recipes_notshown'])
+    st.session_state['recipes_shown'].append(rand_ind)
+    st.session_state['recipes_notshown'].remove(rand_ind)
+    render_recipe(rand_ind, st.session_state['recipes_df'])
     col1, col2 = st.columns(2)
     with col1:
         b1 = st.button("😒 Dislike")
+        st.session_state['recipes_disliked'].append(rand_ind)
     with col2:
         if st.button("🤤 Like "): 
-            recipes_liked.append(rand_ind)
-            print(recipes_liked)
+            st.session_state['recipes_liked'].append(rand_ind)
+            print(st.session_state['recipes_liked'])
     with st.expander("Recipe Details"):
-        render_details(rand_ind)
+        render_details(rand_ind, st.session_state['recipes_df'])
+
+    st.write(st.session_state['recipes_liked'])
 
 
 if __name__ == '__main__':
