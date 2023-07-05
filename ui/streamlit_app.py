@@ -47,7 +47,7 @@ def main():
         # Getting recipe data
         cols = ['RecipeId', 'Name', 'Description', 'Image', 'RecipeCategory', 'Keywords',
        'AggregatedRating', 'ReviewCount', 'RecipeInstructions']
-        recipes = pd.read_csv('./data/recipes_selected.csv', usecols=cols)
+        recipes = pd.read_csv('./data/recipes_selected_summarized.csv', usecols=cols)
 
         # initializing session states
         st.session_state['recipes_df'] = recipes

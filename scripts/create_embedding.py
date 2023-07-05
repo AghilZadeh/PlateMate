@@ -41,5 +41,5 @@ if __name__=='__main__':
         emb_dict[ind] = get_embedding(df.loc[ind, 'Keywords'], embedding_model)
 
     with open('./data/embedding.json', 'w') as f:
-        json.dump(emb_dict, f, indent=4)
+        # json.dump(emb_dict, f, indent=4)
         print('JSON file saved!')

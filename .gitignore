@@ -1,3 +1,5 @@
-data/
+data/*
 mlruns/
 credentials/
+
+!data/recipes_selected_summarized.csv
