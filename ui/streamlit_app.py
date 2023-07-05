@@ -58,20 +58,20 @@ def main():
     
 
     # choosing a recipe to show
-    rand_ind = random.choice(st.session_state['recipes_notshown'])
-    st.session_state['recipes_shown'].append(rand_ind)
-    st.session_state['recipes_notshown'].remove(rand_ind)
-    render_recipe(rand_ind, st.session_state['recipes_df'])
+    ind = random.choice(st.session_state['recipes_notshown'])
+    st.session_state['recipes_shown'].append(ind)
+    st.session_state['recipes_notshown'].remove(ind)
+    render_recipe(ind, st.session_state['recipes_df'])
     col1, col2 = st.columns(2)
     with col1:
         b1 = st.button("😒 Dislike")
-        st.session_state['recipes_disliked'].append(rand_ind)
+        st.session_state['recipes_disliked'].append(ind)
     with col2:
         if st.button("🤤 Like "): 
-            st.session_state['recipes_liked'].append(rand_ind)
+            st.session_state['recipes_liked'].append(ind)
             print(st.session_state['recipes_liked'])
     with st.expander("Recipe Details"):
-        render_details(rand_ind, st.session_state['recipes_df'])
+        render_details(ind, st.session_state['recipes_df'])
 
     st.write(st.session_state['recipes_liked'])
 
