@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
-import random
 import re
+from utils import *
 
 
 # Function to render a recipe profile
@@ -47,33 +47,39 @@ def main():
         # Getting recipe data
         cols = ['RecipeId', 'Name', 'Description', 'Image', 'RecipeCategory', 'Keywords',
        'AggregatedRating', 'ReviewCount', 'RecipeInstructions']
-        recipes = pd.read_csv('./data/recipes_selected_summarized.csv', usecols=cols)
+        df_recipes = pd.read_csv('./data/recipes_selected_summarized.csv', usecols=cols, index_col='RecipeId')
+        (recipes_indices, emb_array) = load_embedding()
 
         # initializing session states
-        st.session_state['recipes_df'] = recipes
-        st.session_state['recipes_notshown'] = recipes.index.to_list()
-        st.session_state['recipes_shown'] = []
+        st.session_state['recipes_df'] = df_recipes
+        st.session_state['recipes_notshown'] = recipes_indices
         st.session_state['recipes_liked'] = []
         st.session_state['recipes_disliked'] = []
-    
-
+        st.session_state['recipes_embeddings'] = emb_array
+        st.session_state['user_emb'] = np.zeros(emb_array.shape[1]) # setting initial 
+        
     # choosing a recipe to show
-    ind = random.choice(st.session_state['recipes_notshown'])
-    st.session_state['recipes_shown'].append(ind)
-    st.session_state['recipes_notshown'].remove(ind)
-    render_recipe(ind, st.session_state['recipes_df'])
+    query = st.session_state['user_emb']/(len(st.session_state['recipes_liked'])+1)
+    recipe_ind  = draw_ind(query, st.session_state['recipes_notshown'], st.session_state['recipes_embeddings'], t=0.1)
+    
+    # changing state variables
+    row_ind = np.where(st.session_state['recipes_notshown']==recipe_ind)
+    recipe_emb = st.session_state['recipes_embeddings'][row_ind].reshape(-1)
+    st.session_state['recipes_embeddings'] = np.delete(st.session_state['recipes_embeddings'], row_ind, 0)
+    st.session_state['recipes_notshown'].remove(recipe_ind)
+    
+    # showing recipe
+    render_recipe(recipe_ind, st.session_state['recipes_df'])
     col1, col2 = st.columns(2)
     with col1:
-        b1 = st.button("😒 Dislike")
-        st.session_state['recipes_disliked'].append(ind)
+        if st.button("😒 Dislike"):
+            st.session_state['recipes_disliked'].append(recipe_ind)
     with col2:
         if st.button("🤤 Like "): 
-            st.session_state['recipes_liked'].append(ind)
-            print(st.session_state['recipes_liked'])
+            st.session_state['recipes_liked'].append(recipe_ind)
+            st.session_state['user_emb'] += recipe_emb
     with st.expander("Recipe Details"):
-        render_details(ind, st.session_state['recipes_df'])
-
-    st.write(st.session_state['recipes_liked'])
+        render_details(recipe_ind, st.session_state['recipes_df'])
 
 
 if __name__ == '__main__':
