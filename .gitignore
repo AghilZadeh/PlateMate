@@ -3,3 +3,4 @@ mlruns/
 credentials/
 
 !data/recipes_selected_summarized.csv
+!data/embedding_v1_short.json
