@@ -45,7 +45,9 @@ The utilized model for this project is [SVD++](https://surprise.readthedocs.io/e
 
 ## Usage Instruction:
 
-You can use the app in just a few steps:
+The app can be found online at https://testyourtaste.streamlit.app/
+
+Additionally, you can use the app in just a few steps locally:
 1. clone the repository in your local machine and install requirements
     ```js
     git clone https://github.com/AghilZadeh/dsml-fullstack-food-recommender/
@@ -61,7 +63,5 @@ You can use the app in just a few steps:
     streamlit run ./ui/streamlit_app.py
     ```
 
-Moreover, you can run a [training script](./scripts/train.py) to train a model in the command line. 
 
-... in progress
 
