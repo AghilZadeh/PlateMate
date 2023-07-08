@@ -8,15 +8,15 @@ st.write("# FAQ 🧑🏽‍🍳")
 
 with st.expander("What is **PlateMate**?"):
     st.write("""
-        **PlateMate** is your trusty sidekick, your culinary compass, and your personal food genie, all rolled into one delicious package. 
-        It's like having a food-loving friend who knows all the best recipes! 
-        Here's how it works: **PlateMate** taps into the power of advanced algorithms and the collective wisdom of food lovers everywhere. 
-        It takes into account your taste preferences, dietary restrictions, and even considers your mood. 
-        After all, sometimes you crave a cozy bowl of soup, and other times you need a mouthwatering burger to satisfy your hunger!
-        With just a few taps, it scans through a treasure trove of recipes and 
-        compares you with other food lovers to find a new recipe to try! 
-        **PlateMate** learns from your choices and refines its recommendations. 
+        **PlateMate** is your personal recipe genie! It's like having a food-loving friend who knows all the best recipes! 
+        Sometimes you crave for something you don't know until you see and try! **PlateMate** shows you recipes and learns 
+        from your choices and refines its recommendations. It scans through a treasure trove of recipes and 
+        compares your preferences with other recipes to continuesly suggest you a new recipe to try! 
+         
         Let the food exploration begin! Bon appétit! 🌮🍕🍣
+
+        **PlateMate** is open source and the repo can be found here: \n
+         https://github.com/AghilZadeh/PlateMate
 
     """)
 

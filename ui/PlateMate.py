@@ -72,10 +72,10 @@ def main():
     # showing recipe
     col1, col2, col3 = st.columns(3)
     with col1:
-        if st.button("😑 Unappetizing"):
+        if st.button("🙄 Meh!"):
             st.session_state['recipes_disliked'].append(recipe_ind)
     with col2:
-        if st.button("😋 Tasty "): 
+        if st.button("😋 Tasty!"): 
             st.session_state['recipes_liked'].append(recipe_ind)
             st.session_state['user_emb'] += recipe_emb
     
