@@ -7,7 +7,7 @@ from utils import *
 # Function to render a recipe profile
 def render_recipe(ind, recipes):
     st.write("##")
-    st.image(recipes.loc[ind, 'Image'], width=400)
+    st.image(recipes.loc[ind, 'Image'], height=400)
     st.write(f"**{recipes.loc[ind, 'Name']}**")
     # desc = recipes.loc[ind, 'Description']
     # if len(desc)>100:
@@ -36,10 +36,10 @@ def main():
     page_icon="🧑🏽‍🍳"
     )
     st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
-    st.write("# Welcome to Test Your Taste! 🧑🏽‍🍳")
+    st.write("# PlateMate 🧑🏽‍🍳")
     #st.sidebar.success("Select a demo above.")
     st.markdown("""
-        #### Tell me what you like, I will recommend you recipes to try!
+        #### Swipe Your Way to Deliciousness!
     """)
 
     # setting session state

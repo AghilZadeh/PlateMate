@@ -1,12 +1,12 @@
-# Test Your Taste (A food recommender system)
+# PlateMate (A recipe recommender system)
 
 ## Overview:
 
-**Test your Taste** is your trusty sidekick, your culinary compass, and your personal food genie, all rolled into one delicious package. It's like having a food-loving friend who knows all the best recipes!
+**PlateMate** is your trusty sidekick, your culinary compass, and your personal food genie, all rolled into one delicious package. It's like having a food-loving friend who knows all the best recipes!
 
-Here's how it works: **Test your Taste** taps into the power of advanced algorithms and the collective wisdom of food lovers everywhere. It takes into account your taste preferences, dietary restrictions, and even considers your mood. After all, sometimes you crave a cozy bowl of soup, and other times you need a mouthwatering burger to satisfy your hunger!
+Here's how it works: **PlateMate** taps into the power of advanced algorithms and the collective wisdom of food lovers everywhere. It takes into account your taste preferences, dietary restrictions, and even considers your mood. After all, sometimes you crave a cozy bowl of soup, and other times you need a mouthwatering burger to satisfy your hunger!
 
-With just a few taps, it scans through a treasure trove of recipes and compares you with other food lovers to find a new recipe to try! **Test your Taste** learns from your choices and refines its recommendations. Let the food exploration begin! Bon appétit! 🌮🍕🍣
+With just a few taps, it scans through a treasure trove of recipes and compares you with other food lovers to find a new recipe to try! **PlateMate** learns from your choices and refines its recommendations. Let the food exploration begin! Bon appétit! 🌮🍕🍣
 
 ## Data:
 
@@ -45,7 +45,7 @@ The utilized model for this project is [SVD++](https://surprise.readthedocs.io/e
 
 ## Usage Instruction:
 
-The app can be found online at https://testyourtaste.streamlit.app/
+The app can be found online at https://platemate.streamlit.app/
 
 Additionally, you can use the app in just a few steps locally:
 1. clone the repository in your local machine and install requirements
