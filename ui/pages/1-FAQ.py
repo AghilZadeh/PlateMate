@@ -6,16 +6,16 @@ st.set_page_config(
 
 st.write("# FAQ 🧑🏽‍🍳")
 
-with st.expander("What is 'Test your Taste'?"):
+with st.expander("What is **PlateMate**?"):
     st.write("""
-        **Test your Taste** is your trusty sidekick, your culinary compass, and your personal food genie, all rolled into one delicious package. 
+        **PlateMate** is your trusty sidekick, your culinary compass, and your personal food genie, all rolled into one delicious package. 
         It's like having a food-loving friend who knows all the best recipes! 
-        Here's how it works: **Test your Taste** taps into the power of advanced algorithms and the collective wisdom of food lovers everywhere. 
+        Here's how it works: **PlateMate** taps into the power of advanced algorithms and the collective wisdom of food lovers everywhere. 
         It takes into account your taste preferences, dietary restrictions, and even considers your mood. 
         After all, sometimes you crave a cozy bowl of soup, and other times you need a mouthwatering burger to satisfy your hunger!
         With just a few taps, it scans through a treasure trove of recipes and 
         compares you with other food lovers to find a new recipe to try! 
-        **Test your Taste** learns from your choices and refines its recommendations. 
+        **PlateMate** learns from your choices and refines its recommendations. 
         Let the food exploration begin! Bon appétit! 🌮🍕🍣
 
     """)
