@@ -40,7 +40,7 @@ def main():
     st.write("# PlateMate 🧑🏽‍🍳")
     #st.sidebar.success("Select a demo above.")
     st.markdown("""
-        #### Swipe Your Way to Deliciousness! \n #
+        #### Tap Your Way to Deliciousness! \n #
     """)
 
     # setting session state
