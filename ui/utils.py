@@ -1,7 +1,7 @@
 import json
 import numpy as np
 
-def load_embedding(path='./data/embedding_v1_short.json'):
+def load_embedding(path='./data/embedding_v1.2_short.json'):
     'loads the embedding data base into a numpy array and returns the indices and embedding numpy array'
     with open(path, 'r') as f:
         embedding = json.load(f)    
