@@ -39,7 +39,9 @@ def main():
         
     # choosing a recipe to show
     query = st.session_state['user_emb']/(len(st.session_state['recipes_liked'])+1)
-    recipe_ind  = draw_ind(query, st.session_state['recipes_notshown'], st.session_state['recipes_embeddings'], t=0.1)
+    # setting tempreture such that at first it shows recipes more randomly
+    tempreture = np.exp(-len(st.session_state['recipes_liked'])/5) + 0.01
+    recipe_ind  = draw_ind(query, st.session_state['recipes_notshown'], st.session_state['recipes_embeddings'], t=0.01)
     
     # changing state variables
     row_ind = np.where(st.session_state['recipes_notshown']==recipe_ind)
