@@ -5,7 +5,7 @@
 **PlateMate** is your personal recipe genie! It's like having a food-loving friend who knows all the best recipes! 
         Sometimes you crave for something you don't know until you see and try! **PlateMate** shows you recipes and learns 
         from your choices and refines its recommendations. It scans through a treasure trove of recipes and 
-        compares your preferences with other recipes to continuesly suggest you a new recipe to try! 
+        compares your preferences with other recipes to continuously suggest you a new recipe to try! 
          
         Let the food exploration begin! Bon appétit! 🌮🍕🍣
 
