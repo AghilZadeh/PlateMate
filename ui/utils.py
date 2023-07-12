@@ -1,5 +1,32 @@
 import json
 import numpy as np
+import re
+import pandas as pd
+import streamlit as st
+
+
+# Function to render a recipe profile
+def render_recipe(ind, recipes):
+    st.write(f"**{recipes.loc[ind, 'Name']}**")
+    st.image(recipes.loc[ind, 'Image'], width=315)
+    # desc = recipes.loc[ind, 'Description']
+    # if len(desc)>100:
+    #     st.write(desc[:100], '...')
+    # else:
+    #     st.write(desc)
+
+def render_details(ind, recipes):
+    
+    st.write(f"{recipes.loc[ind, 'Description']}")
+    inst = ' '.join(str2list(recipes.loc[ind, 'RecipeInstructions']))
+    st.write(f"**Instruction:**  {inst}")
+    st.write(f"**Rating:** {recipes.loc[ind, 'AggregatedRating']}")
+    st.write(f"**Author:** {recipes.loc[ind, 'AuthorName']}")
+    
+
+def str2list(s: str) -> list:
+    'returns a list of strings breaking the original string by "" '
+    return re.findall(r'"(.*?)"', s)
 
 def load_embedding(path='./data/embedding_v1.2_short.json'):
     'loads the embedding data base into a numpy array and returns the indices and embedding numpy array'

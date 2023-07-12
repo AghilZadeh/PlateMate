@@ -4,29 +4,6 @@ import re
 from utils import *
 
 
-# Function to render a recipe profile
-def render_recipe(ind, recipes):
-    st.write(f"**{recipes.loc[ind, 'Name']}**")
-    st.image(recipes.loc[ind, 'Image'], width=315)
-    # desc = recipes.loc[ind, 'Description']
-    # if len(desc)>100:
-    #     st.write(desc[:100], '...')
-    # else:
-    #     st.write(desc)
-
-def render_details(ind, recipes):
-    
-    st.write(f"{recipes.loc[ind, 'Description']}")
-    inst = ' '.join(str2list(recipes.loc[ind, 'RecipeInstructions']))
-    st.write(f"**Instruction:**  {inst}")
-    st.write(f"**Rating:** {recipes.loc[ind, 'AggregatedRating']}")
-    st.write(f"**Author:** {recipes.loc[ind, 'AuthorName']}")
-    
-
-def str2list(s: str) -> list:
-    'returns a list of strings breaking the original string by "" '
-    return re.findall(r'"(.*?)"', s)
-
 # Main Streamlit app
 def main():
 
@@ -53,11 +30,12 @@ def main():
 
         # initializing session states
         st.session_state['recipes_df'] = df_recipes
-        st.session_state['recipes_notshown'] = recipes_indices
+        st.session_state['recipes_notshown'] = df_recipes.index.tolist()
         st.session_state['recipes_liked'] = []
         st.session_state['recipes_disliked'] = []
         st.session_state['recipes_embeddings'] = emb_array
-        st.session_state['user_emb'] = np.zeros(emb_array.shape[1]) # setting initial 
+        st.session_state['user_emb'] = np.zeros(emb_array.shape[1]) # setting initial
+        st.session_state['model_temp'] = 1 # setting model tempreture 
         
     # choosing a recipe to show
     query = st.session_state['user_emb']/(len(st.session_state['recipes_liked'])+1)
