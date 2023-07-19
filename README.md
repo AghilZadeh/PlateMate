@@ -37,12 +37,15 @@ The recommender model is trained using our dataset, which includes a collection 
 Additionally, the model takes into account the preferences expressed by the user. 
 By incorporating these preferences, the model can personalize recommendations based on individual tastes and interests.
 
-2. A content-based approach using keywords of recipes:
-... in progress
+2. A content-based approach using keywords and instructions of recipes: Recipes are mapped to a vector embedding space. The embedding space is constructed by feeding the recipe keywords and instructions to OpenAI second generation text-embedding-ada-002 model API. Users embedding is calculated by mean vector of their liked recipes. At each step, a similarity score is calculated by cosine similarity of user and recipes. The next recipe is drawn randomly using probabilities calculated by SoftMax of similarity scores with temperature. The temperature decreases as the number of clicks increases to address the cold start problem. To improve speed and efficiency, the embedding dimensionality is reduced resulting in 15-fold improvement in memory and speed.
+   ![image](https://github.com/AghilZadeh/PlateMate/assets/35585082/d0acdf3b-2f33-45a7-964e-4ced3582dab1)
+
 
 ## Results:
 
 The utilized model for this project is [SVD++](https://surprise.readthedocs.io/en/stable/matrix_factorization.html) from scikit-surprise. The model was evaluated using cross-validation on the training set. It scores better than other collaborative filtering methods of scikit-surprise such as KNN or clustering methods.
+![image](https://github.com/AghilZadeh/PlateMate/assets/35585082/caf2b81f-ec4f-4bd1-a9ef-cb5b8165ef54)
+
 
 ## Usage Instruction:
 
@@ -61,7 +64,7 @@ Additionally, you can use the app in just a few steps locally:
     ```
 4. run streamlit app locally using the command below:
     ```js
-    streamlit run ./ui/streamlit_app.py
+    streamlit run ./ui/PlateMate.py
     ```
 
 
